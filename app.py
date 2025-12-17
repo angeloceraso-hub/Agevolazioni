@@ -20,7 +20,7 @@ def create_pdf(dati_report):
     pdf.set_font("Arial", 'B', 12)
     pdf.cell(200, 10, "Nota: I valori sono stime basate sulle normative 2025.", ln=True)
     
-    return pdf.output(dest='S').encode('latin-1')
+    return pdf.output(dest='S')
 
 # --- INTERFACCIA ---
 st.title("💼 HR Simulator: Apprendistato & Bonus 2025")
